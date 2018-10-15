@@ -1,9 +1,14 @@
-﻿using System;
+﻿// I, Aaron Soulliere, student number 000076628, certify that this material is my
+// original work. No other person's work has been used without due
+// acknowledgement and I have not made my work available to anyone else.
+
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Lab1.Data;
 using Lab1.Models;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
@@ -15,6 +20,7 @@ namespace Lab1.Controllers
     {
         // GET: api/DealershipApi
         [HttpGet]
+        [Authorize(Roles = "Manager, Employee")]
         public IActionResult Get()
         {
             var dealerships = DealershipMgr.GetDealerships();
@@ -28,6 +34,7 @@ namespace Lab1.Controllers
 
         // GET: api/DealershipApi/5
         [HttpGet("{id}", Name = "Get")]
+        [Authorize(Roles = "Manager, Employee")]
         public IActionResult Get(int id)
         {
             var dealership = DealershipMgr.GetDealership(id);
@@ -41,6 +48,7 @@ namespace Lab1.Controllers
 
         // POST: api/DealershipApi
         [HttpPost]
+        [Authorize(Roles = "Manager, Employee")]
         public IActionResult Post([FromBody] Dealership value)
         {
             if (value == null)
@@ -64,6 +72,7 @@ namespace Lab1.Controllers
 
         // PUT: api/DealershipApi/5
         [HttpPut("{id}")]
+        [Authorize(Roles = "Manager")]
         public IActionResult Put(int id, [FromBody] Dealership value)
         {
             if (value == null)
@@ -93,6 +102,7 @@ namespace Lab1.Controllers
 
         // DELETE: api/ApiWithActions/5
         [HttpDelete("{id}")]
+        [Authorize(Roles = "Manager")]
         public IActionResult Delete(int id)
         {
             Dealership dealership = DealershipMgr.GetDealership(id);

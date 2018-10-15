@@ -1,4 +1,8 @@
-﻿using Lab1.Models;
+﻿// I, Aaron Soulliere, student number 000076628, certify that this material is my
+// original work. No other person's work has been used without due
+// acknowledgement and I have not made my work available to anyone else.
+
+using Lab1.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
