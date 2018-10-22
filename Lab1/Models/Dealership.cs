@@ -20,6 +20,7 @@ namespace Lab1.Models
         [EmailAddress]
         [Display(Name = "Email")]
         public string Email { set; get; }
+        [Phone]
         [Display(Name = "Phone Number")]
         public string PhoneNumber { set; get; }
     }
