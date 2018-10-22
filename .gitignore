@@ -259,3 +259,16 @@ paket-files/
 # Python Tools for Visual Studio (PTVS)
 __pycache__/
 *.pyc
+/Lab1/Properties/PublishProfiles/securecodinglab2 - Web Deploy.pubxml
+/Lab1/Properties/PublishProfiles/securecodingl2 - Web Deploy1.pubxml
+/Lab1/Properties/PublishProfiles/securecodingl2 - Web Deploy.pubxml
+/Lab1/Properties/PublishProfiles/securecodingl2 - FTP.pubxml
+/Lab1/Properties/PublishProfiles/scl2 - Web Deploy3.pubxml
+/Lab1/Properties/PublishProfiles/scl2 - Web Deploy2.pubxml
+/Lab1/Properties/PublishProfiles/scl2 - Web Deploy1.pubxml
+/Lab1/Properties/PublishProfiles/scl2 - Web Deploy.pubxml
+/Lab1/Properties/PublishProfiles/scl2 - FTP2.pubxml
+/Lab1/Properties/PublishProfiles/scl2 - FTP1.pubxml
+/Lab1/Properties/PublishProfiles/scl2 - FTP.pubxml
+/Lab1/Properties/PublishProfiles/Lab120181019090645 - Web Deploy.pubxml
+*.pubxml
