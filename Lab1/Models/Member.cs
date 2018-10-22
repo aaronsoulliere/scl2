@@ -13,8 +13,10 @@ namespace Lab1.Models
     public class Member
     {
         [Required]
+        [Display(Name = "First Name")]
         public string FirstName { set; get; }
         [Required]
+        [Display(Name = "Last Name")]
         public string LastName { set; get; }
         [Required]
         [Key]
@@ -26,14 +28,17 @@ namespace Lab1.Models
             }
             get
             {
-                return _username == "" ? FirstName + "." + LastName : _username;
+                return _username == "" ? Email : _username;
             }
         }
         private string _username = "";
         [Required]
+        [EmailAddress]
+        [Display(Name = "Email")]
         public string Email { set; get; }
         public string Company { set; get; }
         public string Position { set; get; }
+        [Display(Name = "Birth Date")]
         public DateTime? BirthDate { set; get; }
     }
 }

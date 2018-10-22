@@ -17,7 +17,10 @@ namespace Lab1.Models
         [Required]
         public string Name { set; get; }
         [Required]
+        [EmailAddress]
+        [Display(Name = "Email")]
         public string Email { set; get; }
+        [Display(Name = "Phone Number")]
         public string PhoneNumber { set; get; }
     }
 }

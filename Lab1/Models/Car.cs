@@ -23,6 +23,7 @@ namespace Lab1.Models
         [Required]
         public string VIN { set; get; }
         public string Color { set; get; }
+        [Display(Name = "Dealership ID")]
         public int DealershipID { set; get; }
     }
 }
